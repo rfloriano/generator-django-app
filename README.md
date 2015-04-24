@@ -56,6 +56,12 @@ To run your tests:
 $ make test
 ```
 
+To run your testserver:
+
+```bash
+$ make run
+```
+
 ## DISCLAIMER
 
 The above tools are my personal preferences and the ones I like to work with.
