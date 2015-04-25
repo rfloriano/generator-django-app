@@ -258,6 +258,7 @@ var PythonPackageGenerator = yeoman.generators.Base.extend({
     this.log('* "make migrate" to ./manage.py migrate django command;');
     this.log('* "make makemigrations" to ./manage.py makemigrations django command;');
     this.log('* "make db" to ./manage.py makemigrations && ./manage.py migrate equivalent;');
+    this.log('* "make createsuperuser" to create a django admin super user;');
 
     if (pkg.services.redis) {
       this.log("\nRedis commands:");

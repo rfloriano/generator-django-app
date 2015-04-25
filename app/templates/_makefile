@@ -27,6 +27,9 @@ makemigrations:
 
 db: makemigrations migrate
 
+createsuperuser:
+	@python <%= package.pythonName %>/manage.py createsuperuser
+
 # test your application (tests in the tests/ directory)
 test: <% if (package.services.mongodb) { %>mongo_test <% } %><% if (package.services.redis) { %>redis_test <% } %>unit
 
