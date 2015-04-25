@@ -62,6 +62,24 @@ To run your testserver:
 $ make run
 ```
 
+To makemigrations your django database (same that ./manage.py makemigrations:
+
+```bash
+$ make makemigrations
+```
+
+To migrate your django database (same that ./manage.py migrate):
+
+```bash
+$ make migrate
+```
+
+To create migrations, you can run (equivalend to "make makemigrations && make migrate" command):
+
+```bash
+$ make db
+```
+
 ## DISCLAIMER
 
 The above tools are my personal preferences and the ones I like to work with.

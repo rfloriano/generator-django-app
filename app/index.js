@@ -254,6 +254,9 @@ var PythonPackageGenerator = yeoman.generators.Base.extend({
     this.log('* "make setup" to install all dependencies (do not forget to create a virtualenv first);');
     this.log('* "make test" to test your application (tests in the tests/ directory);');
     this.log('* "make run" to run your django application;');
+    this.log('* "make migrate" to ./manage.py migrate django command;');
+    this.log('* "make makemigrations" to ./manage.py makemigrations django command;');
+    this.log('* "make db" to ./manage.py makemigrations && ./manage.py migrate equivalent;');
 
     if (pkg.services.redis) {
       this.log("\nRedis commands:");
