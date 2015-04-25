@@ -8,4 +8,4 @@
 # http://www.opensource.org/licenses/<%= package.license%>-license
 # Copyright (c) <%= package.created.year %>, <%= package.author.name %> <<%= package.author.email %>>
 
-from .version import __version__  # NOQA
+from .<%= package.pythonName %>.version import __version__  # NOQA

@@ -228,6 +228,7 @@ var PythonPackageGenerator = yeoman.generators.Base.extend({
 
     // pkg.name/
     this.mkdir(pkg.pythonName);
+    this.template('_django_app/_init.py', pkg.pythonName + '/__init__.py');
     this.template('_django_app/_manage.py', pkg.pythonName + '/manage.py');
 
     // pkg.name/pkg.name

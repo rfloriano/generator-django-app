@@ -9,7 +9,7 @@
 # Copyright (c) <%= package.created.year %>, <%= package.author.name %> <<%= package.author.email %>>
 
 from setuptools import setup, find_packages
-from <%= package.pythonName %>.<%= package.pythonName %> import __version__
+from <%= package.pythonName %> import __version__
 
 tests_require = [
     'mock',
