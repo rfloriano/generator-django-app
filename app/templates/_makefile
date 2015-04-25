@@ -20,10 +20,10 @@ run:
 	@python <%= package.pythonName %>/manage.py runserver 0.0.0.0:8000
 
 migrate:
-	@python myenv/manage.py migrate
+	@python <%= package.pythonName %>/manage.py migrate
 
 makemigrations:
-	@python myenv/manage.py makemigrations
+	@python <%= package.pythonName %>/manage.py makemigrations
 
 db: makemigrations migrate
 
